@@ -1,0 +1,82 @@
+// Custom.scss
+
+// Required Bootstrap
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+// Custom Sass
+
+// Variables
+$theme-colors: (
+  "primary": #0277BD
+);
+$red: #CC0000;
+$grey: #4F4F4F;
+$grey-2: #3E3E3E;
+$grey-3: #333333;
+$grey-light: #999999;
+
+// General
+
+.card, .btn {
+  border-radius: 0px !important;
+}
+
+.grey {
+  color: $grey;
+}
+
+.grey-2 {
+  color: $grey-2;
+}
+
+.grey-light {
+  color: $grey-light;
+}
+
+.strip-blue {
+  background: map-get($theme-colors, "primary");
+}
+
+// 2 Column Card
+
+.redbox {
+  border: 1px solid $red;
+  .redbox__p {
+    color: $red;
+  }
+}
+
+.rounded-circle {
+  height: 35px;
+}
+
+// Header banner
+
+.strip-grey {
+  background: $grey-3;
+}
+
+.box {
+  background: rgba(0, 0, 0, 0.5) !important;
+}
+
+@include media-breakpoint-down(xs) {
+  .image-2 {
+    height: 420px;
+  }
+}
+@include media-breakpoint-down(md) {
+  .image-2 {
+    height: 380px;
+  }
+}
+
+// Optional Bootstrap
+@import "node_modules/bootstrap/scss/reboot";
+@import "node_modules/bootstrap/scss/type";
+@import "node_modules/bootstrap/scss/grid";
+@import "node_modules/bootstrap/scss/buttons";
+@import "node_modules/bootstrap/scss/card";
+@import "node_modules/bootstrap/scss/utilities";
