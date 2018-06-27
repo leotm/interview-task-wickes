@@ -1,8 +1,10 @@
 # Responsive HTML5/CSS3 Task - Wickes
 
+## Task
+
 See: https://zaynzafar.github.io/interview-task-wickes/.
 
-## Build
+## Dependencies
 
 Run `npm i` to install the dependencies and dev dependencies.
 
